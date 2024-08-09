@@ -1,0 +1,88 @@
+ul {
+  list-style-type: none;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  li {
+    margin-bottom: 5px;
+  }
+}
+.container{
+display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .header {
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .header img {
+    height: 100%; 
+    width: -webkit-fill-available; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+  
+  .text-overlay {
+    position: absolute;
+    z-index: 2; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold;
+    text-align: center; 
+  }
+ 
+}
+.heart-icon {
+    font-size: 24px;
+    color: #eee;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.heart-icon.liked {
+    color: red;
+}
+.like-section {
+    display: flex;
+    align-items: center;
+}
+.like-count {
+    margin-left: 8px;
+    font-size: 16px;
+}
+.search-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  .text-field {
+    // width: 400px;
+  }
+  .select-field {
+    min-width: 120px;
+    &.category{
+        width: 250px;
+        padding: 10px !important;
+    }
+  }
+  .search-button{
+    margin-left: 20px;
+    min-width: 80px;
+    text-transform: none;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+}
